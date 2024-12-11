@@ -16,8 +16,12 @@ code {
     monospace;
 }
 
+.main-container {
+  @apply flex flex-col justify-start items-center min-h-screen space-y-4;
+}
+
 .home-container {
-  @apply flex justify-center items-center h-screen;
+  @apply flex justify-center items-center mt-8;
 }
 
 .home-text {
@@ -26,4 +30,33 @@ code {
 
 .home-title {
   @apply text-4xl font-bold;
+}
+
+.login-container{
+  @apply flex justify-center items-center;
+}
+.form-container {
+  @apply bg-white p-6 rounded-md shadow-md border-2 border-gray-400;
+  width: 300px; /* Set a fixed width for the form */
+}
+.login-input{
+  @apply border-2 border-solid border-black rounded-md p-2 mb-4 w-full;
+}
+
+.input-wrapper {
+  @apply relative mb-4;
+}
+
+.floating-label {
+  @apply absolute left-2 top-2 text-gray-400 transition-all duration-300;
+  pointer-events: none;
+}
+
+.login-input:focus ~ .floating-label,
+.login-input:not(:placeholder-shown) ~ .floating-label {
+  @apply text-xs text-blue-500 top-0 left-2;
+}
+
+.login-button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded-md w-full mt-4 cursor-pointer hover:bg-blue-600 transition-colors;
 }
