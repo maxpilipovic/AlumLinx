@@ -17,6 +17,7 @@ export function Login() {
   return (
     <div className="login-container">
       <div className="form-container">
+          {/* User Name */}
         <div className="input-wrapper">
             <input
               name="username"
@@ -30,6 +31,7 @@ export function Login() {
               Username
           </label>
         </div>
+          {/* PassWord */}
         <div className="input-wrapper">
             <input
               name="password"

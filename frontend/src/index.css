@@ -33,29 +33,31 @@ code {
 }
 
 .login-container{
-  @apply flex justify-center items-center;
-}
+  @apply flex justify-center items-center; 
+}/* Where the login stuff will be on the page */
+
 .form-container {
   @apply bg-white p-6 rounded-md shadow-md border-2 border-gray-400;
-  width: 300px; /* Set a fixed width for the form */
+  width: 300px; /* Set a fixed width to contain the login stuff */
 }
+
 .login-input{
   @apply border-2 border-solid border-black rounded-md p-2 mb-4 w-full;
-}
+}/*style of the input boxes*/
 
 .input-wrapper {
   @apply relative mb-4;
-}
+}/*for stuff inside the input box*/
 
 .floating-label {
   @apply absolute left-2 top-2 text-gray-400 transition-all duration-300;
   pointer-events: none;
-}
+}/*for floating text in the input box*/
 
 .login-input:focus ~ .floating-label,
 .login-input:not(:placeholder-shown) ~ .floating-label {
   @apply text-xs text-blue-500 top-0 left-2;
-}
+}/*tells input text when to float*/
 
 .login-button {
   @apply bg-blue-500 text-white py-2 px-4 rounded-md w-full mt-4 cursor-pointer hover:bg-blue-600 transition-colors;
