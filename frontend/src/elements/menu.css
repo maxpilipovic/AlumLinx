@@ -1,0 +1,84 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Menu Bar */
+  .menu-container {
+    width: 100%;
+  }
+  
+  .menu-bar {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  
+  .menu-item:hover a {
+    background-color: #444;
+  }
+  
+  /* Submenu styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  .submenu p {
+    color: white;
+    margin: 0;
+  }
+  
+  /* Home Container */
+  .home-container {
+    margin-top: 80px; /* Space for fixed navbar */
+    text-align: center;
+  }
+  
+  .home-text {
+    margin-top: 100px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  

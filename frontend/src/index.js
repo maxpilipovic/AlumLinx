@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import {Home, Login} from './pages/Landing';
+import {Header, Login} from './pages/Landing';
+import {Header2} from './pages/Homepage';
+import {Menu} from './elements/menu.js';
+import {Column} from './elements/column.js';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -10,8 +14,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className="main-container">
-      <Home />
-      <Login />
+      {/* <Header />
+      <Login /> */}
+      <Header />
+      {/* <Menu /> */}
+
+      
     </div>
   </React.StrictMode>
 );

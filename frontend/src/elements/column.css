@@ -1,0 +1,101 @@
+/* Overall container with grid layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Left sidebar: 1, Main feed: 3, Right sidebar: 1 */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Left Sidebar */
+  .sidebar-left {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh;
+  }
+  
+  .sidebar-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-left ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-left li {
+    margin: 10px 0;
+  }
+  
+  .sidebar-left a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar-left a:hover {
+    color: #0077b5;
+  }
+  
+  /* Main Feed */
+  .main-feed {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh;
+    overflow-y: auto; /* Scrollable if content exceeds viewport */
+  }
+  
+  .main-feed h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .post h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    color: #555;
+  }
+  
+  /* Right Sidebar */
+  .sidebar-right {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh;
+  }
+  
+  .sidebar-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-right ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-right li {
+    margin: 10px 0;
+  }
+  
+  /* Image styling under posts */
+.post-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Set a max width for the image */
+  margin-top: 15px; /* Add some space above the image */
+  border-radius: 8px; /* Optional: Round the corners of the image */
+  display: block; /* Ensure the image behaves like a block element */
+  margin-left: auto;
+  margin-right: auto; /* Center the image horizontally */
+}
